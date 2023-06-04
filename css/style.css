@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    box-sizing: inherit;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    background-color: hsl(216, 50%, 16%);
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+
+}
+
+
+.container {
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.images-box {
+    position: relative;
+}
+
+.main-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hover-img {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.b-ground {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: calc(100% - 5px);
+    border-radius: 10px;
+    background-color: hsla(178, 100%, 50%, 0.466);
+    opacity: 0;
+}
+
+.b-ground:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.container h1 {
+    color: hsla(0, 0%, 100%, 0.712);
+    font-size: 23px;
+    margin-top: 10px;
+}
+
+.container h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.text {
+    color: hsla(215, 52%, 70%, 0.548);
+}
+
+
+
+.price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+
+.offer-time {
+    font-weight: 600;
+    color: hsla(215, 52%, 70%, 0.548);
+}
+
+.price-box div img {
+    position: relative;
+    top: 3px;
+}
+
+hr {
+    color: hsl(215, 32%, 27%);
+}
+
+
+
+.author-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.author-box img {
+    width: 35px;
+    border: 1px solid hsla(0, 0%, 100%, 0.685);
+    border-radius: 100%;
+}
+
+.author-box span {
+    color: hsla(215, 52%, 70%, 0.548);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.author-box span span {
+    color: hsla(0, 0%, 100%, 0.623);
+}
+
+.author-box span span:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 320px) {
+    main {
+        width: 300px;
+        box-shadow: 0 0 50px hsl(213, 87%, 6%);
+    }
+
+    
+}
